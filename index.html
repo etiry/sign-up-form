@@ -7,7 +7,65 @@
 	<title>Sign-up Form</title>
 </head>
 <body>
-	<div class="bg-image"></div>
-	<p>test</p>
+	<div class="left-banner">
+		<img src="assets/passport.png" class="logo-img">
+		<p class="logo-text">travelog</p>
+	</div>
+	<div class="bg-attribution">
+		<p class="attribution">Photo by <a href="https://unsplash.com/@catvcarvalho?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Catarina Carvalho</a> on <a href="https://unsplash.com/photos/cqMwRNd0i7I?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+		</p>
+		<p class="attribution"> <a href="https://www.flaticon.com/free-icons/passport" title="passport icons">Passport icons created by Freepik - Flaticon</a>
+		</p>
+	</div>
+	<div class="right-bg">
+		<div class="right-text-top">
+			<p class="body-text">This is not a real online service! You know you need something like this in your life to realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+			<p class="body-text">You <em>know</em> you want to.</p>
+		</div>
+		<div class="form-wrapper">
+			<p class="body-text">Let's do this!</p>
+			<form action="#" method="post" id="signup">
+				<div class="flex-row">
+					<div class="flex-col">
+						<label for="first-name">FIRST NAME</label>
+						<input type="text" id="first-name" name="first-name" minlength="1">
+					</div>
+
+					<div class="flex-col">
+						<label for="last-name">LAST NAME</label>
+						<input type="text" id="last-name" name="last-name" minlength="1">
+					</div>
+				</div>
+
+				<div class="flex-row">
+					<div class="flex-col">
+						<label for="email">EMAIL</label>
+						<input type="email" id="email" name="email">
+					</div>
+
+					<div class="flex-col">
+						<label for="phone">PHONE NUMBER</label>
+						<input type="tel" id="phone" name="phone">
+					</div>
+				</div>
+
+				<div class="flex-row">
+					<div class="flex-col">
+						<label for="password">PASSWORD</label>
+						<input type="password" id="password" name="password" class="error">
+					</div>
+
+					<div class="flex-col">
+						<label for="confirm-password">CONFIRM PASSWORD</label>
+						<input type="password" id="confirm-password" name="confirm-password" class="error">
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="right-text-bottom">
+			<button type="submit" form="signup">Create Account</button>
+			<p class="body-text">Already have an account? <a href="#">Log in</a></p>
+		</div>
+	</div>
 </body>
 </html>
