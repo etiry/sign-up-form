@@ -4,12 +4,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" defer src="script.js"></script>
 	<title>Sign-up Form</title>
 </head>
 <body>
 	<div class="left-banner">
 		<img src="assets/passport.png" class="logo-img">
-		<p class="logo-text">travelog</p>
+		<p class="logo-text">travelogue</p>
 	</div>
 	<div class="bg-attribution">
 		<p class="attribution">Photo by <a href="https://unsplash.com/@catvcarvalho?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Catarina Carvalho</a> on <a href="https://unsplash.com/photos/cqMwRNd0i7I?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -27,20 +28,23 @@
 			<form action="#" method="post" id="signup">
 				<div class="flex-row">
 					<div class="flex-col">
-						<label for="first-name">FIRST NAME</label>
-						<input type="text" id="first-name" name="first-name" minlength="1">
+						<label for="first-name">FIRST NAME (required)</label>
+						<input type="text" id="first-name" name="first-name" required>
+						<span class="error-message">Please enter a first name</span>
 					</div>
 
 					<div class="flex-col">
-						<label for="last-name">LAST NAME</label>
-						<input type="text" id="last-name" name="last-name" minlength="1">
+						<label for="last-name">LAST NAME (required)</label>
+						<input type="text" id="last-name" name="last-name" required>
+						<span class="error-message">Please enter a last name</span>
 					</div>
 				</div>
 
 				<div class="flex-row">
 					<div class="flex-col">
-						<label for="email">EMAIL</label>
-						<input type="email" id="email" name="email">
+						<label for="email">EMAIL (required)</label>
+						<input type="email" id="email" name="email" required>
+						<span class="error-message">Please enter a valid email address</span>
 					</div>
 
 					<div class="flex-col">
@@ -51,13 +55,15 @@
 
 				<div class="flex-row">
 					<div class="flex-col">
-						<label for="password">PASSWORD</label>
-						<input type="password" id="password" name="password" class="error">
+						<label for="password">PASSWORD (required)</label>
+						<input type="password" id="password" name="password" required>
+						<span class="error-message">Please enter a password</span>
 					</div>
 
 					<div class="flex-col">
-						<label for="confirm-password">CONFIRM PASSWORD</label>
-						<input type="password" id="confirm-password" name="confirm-password" class="error">
+						<label for="confirm-password">CONFIRM PASSWORD (required)</label>
+						<input type="password" id="confirm-password" name="confirm-password" required>
+						<span class="error-message">Passwords do not match</span>
 					</div>
 				</div>
 			</form>

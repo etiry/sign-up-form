@@ -34,7 +34,8 @@ button {
     background-color: #0d6582;
     color: #f2f2f2;
     font-family: "manrope_extralightregular";
-    padding: 16px;
+    font-size: 1em;
+    padding: 16px 24px;
     border-radius: 8px;
     border-style: none;
 }
@@ -68,8 +69,24 @@ a {
     text-decoration: none;
 }
 
+.error-message { 
+    display: none; 
+}
+
+.invalid .error-message { 
+    display: block;
+    font-size: 0.5em;
+    color: red;
+    padding-top: 4px;
+} 
+
+.invalid input, 
+.invalid .help {
+    border: 1px solid red;
+}
+
 .right-bg {
-    background-color: #fff;
+    background-color: #f2f2f2;
     background-size: 70% 100%;
     height: 100%;
     width: 65%;
@@ -118,7 +135,8 @@ a {
 .right-text-top, 
 .right-text-bottom {
     background-color: #f2f2f2;
-    padding: 24px 150px 24px 24px;
+    width: 75%;
+    padding: 48px;
 }
 
 .right-text-bottom {
@@ -129,11 +147,13 @@ a {
     font-family: "manrope_extralightregular";
     font-size: 1.25em; 
     font-weight: 700;
+    padding: 0px;
+    margin: 0px;
 }
 
 .form-wrapper {
     background-color: #fff;
-    padding: 8px 150px 24px 24px;
+    padding: 48px;
     margin-bottom: 6px;
     box-shadow: 0 2px 6px #888888;
 }
@@ -146,8 +166,4 @@ a {
     display: flex;
     flex-direction: column;
     padding: 12px;
-}
-
-.error {
-    border: 1px solid red;
 }
