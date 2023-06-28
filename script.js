@@ -11,11 +11,11 @@ function validateForm(e) {
 
 	if (!form.checkValidity()) {
 		e.preventDefault();
-		Array.from(form.elements).forEach(i => {
-			if (i.checkValidity()) {
-				i.parentElement.classList.remove('invalid');
+		Array.from(form.elements).forEach(input => {
+			if (input.checkValidity()) {
+				input.parentElement.classList.remove('invalid');
 			} else {
-				i.parentElement.classList.add('invalid');
+				input.parentElement.classList.add('invalid');
 			}
 		})
 	}
